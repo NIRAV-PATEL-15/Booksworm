@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.reg-container{
+  height: 100vh;
+}
+.reg-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  height: 515px;
+  border-radius: 10px;
+  width: 615px;
+  border-top:  5px solid #daaa63;
+border-top-right-radius: 18px;
+border-top-left-radius:0px ;
+border-bottom-left-radius:0px ;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.reg-body{
+    width: 100%;
+    height: calc(100% - 170px);
+  
+}
+.name-container{
+    margin: auto;
+    width: calc(100% - 70px);
+    display: flex;
+    justify-content: space-between;
+}
+.email-container,.pass-container{
+    width: calc(100% - 70px);
+    margin: auto;
+    margin-top: 10px;
+}
+.reg-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.reg-btn-container > .submit-btn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 150px;
+  font-family: "poppins", "sans-serif";
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  background-color: #daaa63;
+  color: white;
+  border-radius: 8px;
+  height: 45px;
+}
+
+.reg-btn-container > .submit-btn:hover,
+.reg-btn-container > .show-btn:hover {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0px 0px 0px 2px#daaa63;
+  -moz-box-shadow: inset 0px 0px 0px 2px#daaa63;
+  box-shadow: inset 0px 0px 0px 2px#daaa63;
+  /* border: 2px solid #daaa63; */
+  color: #2c1810;
+  padding: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.err-msg{
+  color: red;
+}
+
+.reg-btn-container > .show-btn{
+  border: none;
+  outline: none;
+  padding: 10px;
+  height: 45px;
+  width: 45px;
+  background-color: #daaa63;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (width <= 680px) {
+  .reg-container{
+    height: 100vh;
+  }
+    .reg-box {
+      width: calc(100% - 30px);
+      padding: 10px;
+      height: 600px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 0px;
+    }
+    .reg-body {
+      width: calc(100% - 5px);
+      
+    }
+    .name-container{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  }

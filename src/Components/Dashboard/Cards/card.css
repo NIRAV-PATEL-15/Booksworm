@@ -1,0 +1,35 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+
+}
+.card{
+    height: 300px;
+    width: 350px;
+    border-radius: 8px;
+    background:  #149686;
+
+}
+.card .card-body{
+    height: 230px;
+}
+.card .card-title{
+    display: flex;
+    height: 70px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+border-top: 2px solid white;  
+}
+
+.card .card-title:hover{
+    background: #0ed1ba;
+    color: black;
+cursor: pointer;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+
